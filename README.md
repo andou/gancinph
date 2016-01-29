@@ -1,6 +1,6 @@
-# Cliph
+# Gancinph
 
-Example of CLI app in PHP
+PHP Cli application for CI operations
 
 # Install
 
@@ -8,9 +8,4 @@ Example of CLI app in PHP
 
 # Launch
 
-    ./bin/cliph
-
-# Build
-
-Install the [box](http://box-project.org/) tool, then run `box build` to build
-a PHAR file. Then you can launch the app: `./cliph.phar`.
+    ./bin/gancinph
