@@ -51,20 +51,20 @@ box build
 #
 git checkout gh-pages
 
-cp cliph.phar downloads/cliph-${TAG}.phar
-git add downloads/cliph-${TAG}.phar
+cp gancinph.phar downloads/gancinph-${TAG}.phar
+git add downloads/gancinph-${TAG}.phar
 
-SHA1=$(openssl sha1 cliph.phar)
+SHA1=$(openssl sha1 gancinph.phar)
 
-JSON='name:"cliph.phar"'
+JSON='name:"gancinph.phar" '
 JSON="${JSON},sha1:\"${SHA1}\""
-JSON="${JSON},url:\"http://mattketmo.github.io/cliph/downloads/cliph-${TAG}.phar\""
+JSON="${JSON},url:\"http://andou.github.io/gancinph/downloads/gancinph-${TAG}.phar\""
 JSON="${JSON},version:\"${TAG}\""
 
-if [ -f cliph.phar.pubkey ]; then
-    cp cliph.phar.pubkey pubkeys/cliph-${TAG}.phar.pubkeys
-    git add pubkeys/cliph-${TAG}.phar.pubkeys
-    JSON="${JSON},publicKey:\"http://mattketmo.github.io/cliph/pubkeys/cliph-${TAG}.phar.pubkey\""
+if [ -f gancinph.phar.pubkey ]; then
+    cp gancinph.phar.pubkey pubkeys/gancinph-${TAG}.phar.pubkeys
+    git add pubkeys/gancinph-${TAG}.phar.pubkeys
+    JSON="${JSON},publicKey:\"http://andou.github.io/gancinph/pubkeys/gancinph-${TAG}.phar.pubkey\""
 fi
 
 #
