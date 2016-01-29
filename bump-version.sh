@@ -43,7 +43,7 @@ TAG=$1
 # Tag & build master branch
 #
 git checkout master
-git tag ${TAG}
+git tag -a ${TAG} -m"Release ${TAG}"
 box build
 
 #
