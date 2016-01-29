@@ -12,13 +12,13 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 class UpdateCommand extends Command
 {
-    const MANIFEST_FILE = 'http://mattketmo.github.io/cliph/manifest.json';
+    const MANIFEST_FILE = 'http://andou.github.io/gancinph/manifest.json';
 
     protected function configure()
     {
         $this
             ->setName('update')
-            ->setDescription('Updates cliph.phar to the latest version')
+            ->setDescription('Updates gancinph.phar to the latest version')
             ->addOption('major', null, InputOption::VALUE_NONE, 'Allow major version update')
         ;
     }
