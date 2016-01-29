@@ -1,0 +1,17 @@
+#!/usr/bin/env php
+<?php
+require __DIR__ . '/../vendor/autoload.php';
+
+use Cliph\Command;
+use Andou\GitstatusBundle\Command\GitstatusStatusCommand;
+use Andou\GitstatusBundle\Command\GitstatusMessagesCommand;
+use Andou\GitstatusBundle\Command\GitstatusLastMessageCommand;
+use Symfony\Component\Console\Application;
+
+$application = new Application('Cliph', '@package_version@');
+$application->add(new GitstatusStatusCommand());
+$application->add(new GitstatusLastMessageCommand());
+$application->add(new GitstatusMessagesCommand());
+$application->add(new Command\HelloCommand());
+$application->add(new Command\UpdateCommand());
+$application->run();

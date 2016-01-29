@@ -1,14 +1,23 @@
 {
-    "name": "mattketmo/cliph",
-    "description": "Example of CLI app in PHP",
-    "license": "MIT",
-    "require": {
-        "symfony/console": "~2.3",
-        "herrera-io/phar-update": "~1.0"
-    },
-    "autoload": {
-        "psr-0": {
-            "Cliph": "src"
-        }
+  "name": "andou/gancinph",
+  "description": "Swiss army knife for command line CI commands",
+  "license": "MIT",
+  "require": {
+    "symfony/console": "~2.3",
+    "herrera-io/phar-update": "~1.0",
+    "andou/GitstatusBundle": "~0.1"
+  },
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/andou/GitstatusBundle.git"
     }
+  ],
+  "autoload": {
+    "psr-0": {
+      "Cliph": "src"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }

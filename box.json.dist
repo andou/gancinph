@@ -15,7 +15,7 @@
         }
     ],
     "git-version": "package_version",
-    "main": "bin/cliph",
-    "output": "cliph.phar",
+    "main": "bin/gancinph",
+    "output": "gancinph.phar",
     "stub": true
 }
