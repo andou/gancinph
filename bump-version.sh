@@ -37,7 +37,9 @@ box build
 git checkout gh-pages
 
 cp gancinph.phar downloads/gancinph-${TAG}.phar
+cp gancinph.phar latest/gancinph.phar
 git add downloads/gancinph-${TAG}.phar
+git add latest/gancinph.phar
 
 SHA1=$(openssl sha1 gancinph.phar | sed 's/^.* //')
 
