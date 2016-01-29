@@ -5,3 +5,4 @@ private.key
 cliph.phar.pubkey
 composer.phar
 composer.lock
+bump-v.sh
