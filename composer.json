@@ -15,7 +15,7 @@
   ],
   "autoload": {
     "psr-0": {
-      "Cliph": "src"
+      "Gancinph": "src"
     }
   },
   "minimum-stability": "dev",

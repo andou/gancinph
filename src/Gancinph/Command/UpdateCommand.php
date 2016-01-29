@@ -1,6 +1,6 @@
 <?php
 
-namespace Cliph\Command;
+namespace Gancinph\Command;
 
 use Herrera\Phar\Update\Manager;
 use Symfony\Component\Console\Input\InputOption;
